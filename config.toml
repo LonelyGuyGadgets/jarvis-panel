@@ -1,0 +1,111 @@
+# Example addresses (192.0.2.x is a reserved documentation range). Set your own LAN addresses before deploying.
+bind_host = "192.0.2.10"
+port = 8088
+
+[actions.restart_plex]
+argv = ["sudo", "-n", "systemctl", "restart", "plexmediaserver"]
+changes_state = true
+
+[actions.restart_samba]
+argv = ["sudo", "-n", "systemctl", "restart", "smbd"]
+changes_state = true
+
+[actions.snapraid_sync]
+argv = ["sudo", "-n", "snapraid", "sync"]
+changes_state = true
+exclusive = true
+
+[actions.disk_check]
+argv = ["sudo", "-n", "snapraid", "status"]
+changes_state = false
+
+[actions.pause_pihole]
+internal = "pause_pihole"
+changes_state = true
+
+[actions.resume_pihole]
+internal = "resume_pihole"
+changes_state = true
+
+[plex]
+url = "http://localhost:32400"
+
+[disks]
+# label = device
+parity = "sde"
+tb1 = "sda"
+tb2 = "sdb"
+tb3 = "sdc"
+
+[pihole]
+url = "http://192.0.2.2"
+
+[homeassistant]
+url = "http://192.0.2.10:8123"
+
+[disk_pool]
+path = "/mnt/backup"
+
+# Filled in after Home Assistant is installed (Task 5): name = "entity_id".
+# Only entities listed here can ever be controlled from the panel.
+[smart_home.lights]
+"Bedroom Lamp" = "light.h6022"
+"Office Panels" = "light.h6061"
+"Floor Lamps" = ["light.h6072", "light.h6072_2"]
+"Office Floor Lamp" = "light.h6076"
+"Office Ceiling" = "light.h61a5"
+"Bedroom Ceiling" = "light.h61b8"
+"Balcony" = "light.h7033"
+# Older Govee lights with no LAN control, reached through Govee's cloud (API key in secrets.toml)
+[govee_cloud.lights."Office Light Bars"]
+sku = "H6054"
+device = "AA:BB:CC:00:00:00:00:01"
+
+[govee_cloud.lights."TV Lights"]
+sku = "H605C"
+device = "AA:BB:CC:00:00:00:00:02"
+
+# a smart plug: no colour, so the Ultron show only blinks it on and off
+[govee_cloud.lights."Couch Lamp"]
+sku = "H5083"
+device = "AA:BB:CC:00:00:00:00:03"
+color = false
+
+# Govee H5075 temperature sensors, read over Bluetooth by the NUC
+[climate.sensors]
+"Living Room" = "CC:00:00:00:00:04"
+"Kitchen" = "CC:00:00:00:00:05"
+"Bedroom" = "CC:00:00:00:00:06"
+"Office" = "CC:00:00:00:00:07"
+
+[smart_home.scenes]
+[smart_home.speakers]
+"Office" = "media_player.office_speaker"
+"Living Room" = "media_player.living_room_hub"
+"Kitchen" = "media_player.kitchen_hub"
+"Soundbar" = "media_player.soundbar"
+"Bedroom" = "media_player.bedroom_speaker"
+
+[owner]
+# Whose house this is: the AIs address you by this name, and it is how they refer to the owner.
+# Changing it needs the cached voice lines cleared (delete the voice-cache folder) so they are spoken again.
+name = "Boss"
+
+[voice]
+model = "/home/YOUR_USER/jarvis/voices/en_GB-alan-medium.onnx"
+piper = "/home/YOUR_USER/jarvis/.venv/bin/piper"
+cache_dir = "/home/YOUR_USER/jarvis/voice-cache"
+
+[voice.models]
+e_ = "/home/YOUR_USER/jarvis/voices/en_US-amy-medium.onnx"
+f_ = "/home/YOUR_USER/jarvis/voices/en_GB-cori-medium.onnx"
+jo_ = "/home/YOUR_USER/jarvis/voices/en_US-lessac-medium.onnx"
+
+[voice_commands]
+enabled = true
+model = "small.en"
+
+[brain]
+enabled = true
+url = "http://127.0.0.1:11434/api/chat"
+model = "qwen2.5:3b-instruct"

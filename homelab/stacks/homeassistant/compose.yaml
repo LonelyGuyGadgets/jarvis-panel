@@ -1,0 +1,10 @@
+services:
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+    container_name: homeassistant
+    restart: unless-stopped
+    network_mode: host   # lets it find smart lights and speakers on the home network
+    environment:
+      - TZ=CHANGE_ME
+    volumes:
+      - ./config:/config

@@ -1,0 +1,13 @@
+# Calibre-Web (ebooks). The library is mounted read-only. Edit it in desktop Calibre instead.
+# First run: sign in with the default admin login, set the library path to /books, and change the password.
+# Publish the web port on your home network address only (Calibre-Web's docs list the port).
+services:
+  calibre-web:
+    image: lscr.io/linuxserver/calibre-web:latest
+    container_name: calibre-web
+    restart: unless-stopped
+    environment:
+      - TZ=CHANGE_ME
+    volumes:
+      - ./config:/config
+      - CHANGE_ME_calibre_library:/books:ro

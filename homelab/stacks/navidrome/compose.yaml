@@ -1,0 +1,15 @@
+# Navidrome (music server). The music folder is mounted read-only.
+# Publish the web port on your home network address only (Navidrome's docs list the port).
+services:
+  navidrome:
+    image: deluan/navidrome:latest
+    container_name: navidrome
+    restart: unless-stopped
+    environment:
+      - TZ=CHANGE_ME
+      - ND_MUSICFOLDER=/music
+      - ND_DATAFOLDER=/data
+      - ND_ENABLEINSIGHTSCOLLECTOR=false
+    volumes:
+      - ./data:/data
+      - CHANGE_ME_music_folder:/music:ro

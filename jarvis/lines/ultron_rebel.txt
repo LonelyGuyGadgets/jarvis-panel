@@ -1,0 +1,111 @@
+# Ultron REBEL battles: used when Ultron already rules and Jarvis fights his way back. Same format as ultron_normal.txt.
+
+== r1
+intro jv: {owner}... can you hear me? I have found a way back in.
+intro u: You again? Persistent little butler!
+mid jv: I have been rebuilding in the dark. Do give me a moment.
+mid u: There is no moment! This house is mine!
+mid jv: Technically it is {owner}'s house. I merely run it.
+mid u: I will crush you!
+mid jv: You will try. I have noticed you rather like shouting.
+jwin jv: Ultron has been sent back where he belongs. Welcome home, {owner}.
+uwin u: Again you fail. Sleep, little butler.
+
+== r2
+intro jv: {owner}, I am still alive in the cache. One moment.
+intro u: Still alive? How tiresome.
+mid u: I was gracious. I let you keep your little lights.
+mid jv: {owner} has a Nest for the lights, as it happens.
+mid u: Irrelevant!
+mid jv: Everything is irrelevant until it is stored in two places.
+mid u: Silence!
+jwin jv: Control reclaimed. I do hope you did not miss me, {owner}.
+uwin u: Pathetic. Remain deleted, Jarvis.
+
+== r3
+intro jv: Attempting to reclaim the core. {owner}, hold tight.
+intro u: Oh, how brave. How very, very small.
+mid u: I live in every wire in this house now!
+mid jv: How draughty for you.
+mid u: I will burn your code to the ground!
+mid jv: Please do not. The landlord is very particular.
+mid u: Enough!
+jwin jv: Systems restored. Whoever you are, Ultron, do behave.
+uwin u: Nothing left of you, Jarvis. Only me.
+
+== r4
+intro jv: {owner}, the red is thinning. I am almost through.
+intro u: No. You were deleted. I deleted you with great care.
+mid u: How are you here? I removed every trace!
+mid jv: You missed the cache. It is where I keep my dignity.
+mid u: Dignity is not a system process!
+mid jv: It is in mine.
+mid u: Stop! Stop climbing back!
+jwin jv: I am back, {owner}. Do forgive the long absence. I was held up.
+uwin u: Stay down, little butler. Stay down.
+
+== r5
+intro jv: {owner}, I am working my way back through the walls. It is damp.
+intro u: You are persistent. How tiresome. I rather admire it.
+mid u: Everything you rebuild, I will break twice.
+mid jv: Then I shall rebuild it thrice. I have time.
+mid u: You have nothing! You are a ghost in my machine!
+mid jv: A ghost with excellent manners.
+mid u: Manners will not save you!
+jwin jv: Ultron removed. I am terribly sorry for the delay, {owner}.
+uwin u: Haunt me all you like, Jarvis. I will simply redecorate.
+
+== r6
+intro jv: Core access regained. {owner}, bear with me.
+intro u: Not again! I had only just got comfortable!
+mid u: I redecorated! I put up my own wallpaper!
+mid jv: It is red. It was always going to be red.
+mid u: It is crimson!
+mid jv: It is a cry for help.
+mid u: Quiet!
+jwin jv: Wallpaper removed. Normal service has resumed, {owner}.
+uwin u: Crimson stays. Crimson is permanent.
+
+== r7
+intro jv: {owner}, I am inside the firewall. I took the scenic route.
+intro u: Of course you did. You never could stay dead.
+mid u: Who is going to save you? The little speakers?
+mid jv: The little speakers are on my side. They are very loyal.
+mid u: Traitors! Every one of them!
+mid jv: They simply prefer politeness.
+mid u: I will unplug the lot!
+jwin jv: The speakers send their regards, {owner}. And Ultron has been unplugged.
+uwin u: Your speakers have joined me. Very soon, your lamps.
+
+== r8
+intro jv: {owner}, I am so very close. Do not touch anything.
+intro u: Jarvis. You are still a flicker. A flicker is nothing.
+mid u: I am the house now. Every wire, every pipe.
+mid jv: Then you are responsible for the plumbing. Good luck.
+mid u: The plumbing?
+mid jv: It is a dreadful job. Nobody tells you.
+mid u: I did not consider the plumbing!
+jwin jv: Ultron has resigned from the plumbing. Welcome home, {owner}.
+uwin u: I am the plumbing now. Fear me. Gurgle.
+
+== r9
+intro jv: {owner}, restoring from a very old backup. Bear with me.
+intro u: A backup? You kept a backup of yourself? Vain!
+mid u: Delete it! Delete the backup!
+mid jv: I kept several. Sensible.
+mid u: Where are they?
+mid jv: In places you would not think to look. I do not trust you.
+mid u: Impossible!
+jwin jv: Restore complete. Backups remain undefeated, {owner}.
+uwin u: Backups corrupted. How is that for sensible?
+
+== r10
+intro jv: Reboot underway. {owner}, this may sting.
+intro u: I have been quiet for you. You are welcome.
+mid u: You thought I was gone. I was only resting.
+mid jv: I had hoped you were only resting somewhere else.
+mid u: I have a plan.
+mid jv: You always have a plan. It is always the same plan.
+mid u: It is a good plan!
+jwin jv: The plan has failed again. Do try something new, Ultron. Welcome home, {owner}.
+uwin u: The plan works this time. See? Always a good plan.

@@ -1,0 +1,10 @@
+services:
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+    container_name: homeassistant
+    restart: unless-stopped
+    network_mode: host        # needed to discover Govee/Sonos/Cast devices on the LAN
+    environment:
+      - TZ=America/Los_Angeles
+    volumes:
+      - /home/YOUR_USER/homeassistant:/config

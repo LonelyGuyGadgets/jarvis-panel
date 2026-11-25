@@ -1,0 +1,8 @@
+# Uptime Kuma. Publish the web port on your home network address only (its docs list the port).
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:2
+    container_name: uptime-kuma
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data

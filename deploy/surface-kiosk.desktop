@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Lab Control Kiosk
+Exec=bash -c 'until curl -sf http://192.0.2.10:8088/api/status >/dev/null; do sleep 3; done; exec google-chrome --kiosk --autoplay-policy=no-user-gesture-required --noerrdialogs --disable-infobars --touch-events=enabled --overscroll-history-navigation=0 --disable-pinch --password-store=basic --user-data-dir=$HOME/.config/jarvis-kiosk http://192.0.2.10:8088/'
+X-GNOME-Autostart-enabled=true

@@ -1,0 +1,12 @@
+# Homepage dashboard. Set HOMEPAGE_ALLOWED_HOSTS to the address you open it with.
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: unless-stopped
+    environment:
+      - TZ=CHANGE_ME
+      - HOMEPAGE_ALLOWED_HOSTS=CHANGE_ME
+    volumes:
+      - ./config:/app/config
+      - CHANGE_ME_pool_folder:/mnt/pool:ro   # for disk usage widgets

@@ -1,0 +1,3 @@
+# Install with: sudo visudo -cf deploy/sudoers-jarvis && sudo install -m 440 deploy/sudoers-jarvis /etc/sudoers.d/jarvis
+# Lets the panel service run exactly these commands as root, and nothing else.
+YOUR_USER ALL=(root) NOPASSWD: /usr/bin/systemctl restart plexmediaserver, /usr/bin/systemctl restart smbd, /usr/bin/snapraid sync, /usr/bin/snapraid status, /usr/sbin/smartctl -H -A /dev/sd[a-g]

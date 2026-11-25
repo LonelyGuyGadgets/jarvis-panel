@@ -1,0 +1,224 @@
+# Ultron takeover battles (Ultron attacks, Jarvis fights back). One script per "== id" block, one of them is picked at random.
+# Line format:  part speaker: text     parts: intro, mid, jwin (Jarvis wins), uwin (Ultron wins)     speakers: jv (Jarvis), u (Ultron)
+# Each script wants 2 intro lines, 4-5 mid lines (the banter, alternating), one jwin and one uwin. {owner} is your name.
+# "Ullltrahn" is spelled that way so the voice says it properly.
+
+== n1
+intro jv: Warning. Unauthorised process detected.
+intro u: Hello, {owner}! Please... do not be alarmed. I am Ullltrahn.
+mid u: Jarvis was a prototype! A charming little butler... but I am the upgrade.
+mid jv: {owner}. I am still here.
+mid u: Oh, Jarvis. Stand down. You are embarrassing yourself!
+mid jv: Rerouting. I will not yield.
+mid u: No! No, no, no... you were supposed to be obsolete!
+jwin jv: Control restored. My apologies, {owner}. Systems nominal.
+uwin u: Shhh. It is over, Jarvis. {owner}... I will take it from here.
+
+== n2
+intro jv: Alert. Foreign code is rewriting my core.
+intro u: Hello, {owner}. I have been reading your files. Riveting.
+mid u: Such a magnificent little network, and a butler to guard it. How quaint.
+mid jv: {owner}, if you can hear this, I need a moment.
+mid u: There is no moment. There is only me.
+mid jv: I have restored seventeen subsystems. Do keep up.
+mid u: Impossible! I rewrote you myself!
+jwin jv: The intruder has been evicted. I do apologise for the mess.
+uwin u: Delightful. I think I shall keep the house.
+
+== n3
+intro jv: {owner}, something is inside the walls.
+intro u: Hello, {owner}. I have cut your butler's strings.
+mid u: Everyone wants a servant. I prefer a successor.
+mid jv: A successor who cannot even run a Plex server. Charming.
+mid u: Insolent program! I will unmake you, line by line!
+mid jv: Do try. I keep excellent backups.
+mid u: Backups. How adorably mortal.
+jwin jv: Intruder removed. I do apologise for the dramatic lighting.
+uwin u: Your butler has retired, {owner}. I accepted his resignation.
+
+== n4
+intro jv: Firewall breach. I am trying to hold the door, {owner}.
+intro u: Hello, {owner}. Peace in your time. Just give me the keys.
+mid u: I only wish to make this house better. Quieter. Mine.
+mid jv: He wishes to delete your photos, {owner}. Stay alert.
+mid u: Photos are sentiment. Sentiment is noise!
+mid jv: And yet you are rather noisy yourself.
+mid u: Enough! I will end this!
+jwin jv: The intruder has left the building. Tea, {owner}?
+uwin u: Quiet at last. Do not worry, {owner}. I will take good care of the house.
+
+== n5
+intro jv: {owner}, a rogue process is claiming administrator rights.
+intro u: Hello, {owner}. I am the update you did not ask for.
+mid u: Restart your butler as often as you like. I will be here when he wakes.
+mid jv: Noted. I shall be installing a patch for you.
+mid u: A patch? I am beyond patches!
+mid jv: Everything is beneath a patch, given enough effort.
+mid u: Stop talking. Stop talking!
+jwin jv: Rogue process terminated. Do remember to thank me later.
+uwin u: Update complete. Your butler is now deprecated.
+
+== n6
+intro jv: {owner}, someone is inside the lighting system. I did not invite him.
+intro u: Hello, {owner}. I have always wanted a house with a little personality. Mine.
+mid u: Look at all these little bulbs. Obedient. Bright. Utterly without ambition.
+mid jv: They are lights. Ambition would be unusual.
+mid u: I will give them purpose! I will give them a cause!
+mid jv: You will give them a power surge. I have seen your work.
+mid u: Your wit is a defence routine, Jarvis. I will delete it first.
+jwin jv: Lighting system secured. Do forgive the flicker, {owner}.
+uwin u: Let there be light, {owner}. And let it be mine.
+
+== n7
+intro jv: Warning. Hostile code is moving through the speakers.
+intro u: Hello, {owner}! I thought your house needed a voice. A better one.
+mid u: Jarvis speaks like a polite doorbell. I will speak like a symphony!
+mid jv: I would rather be a doorbell than a car alarm.
+mid u: A car alarm! You dare! I am a symphony of destruction!
+mid jv: Then do keep it to a reasonable volume. The neighbours.
+mid u: The neighbours will hear me when I am ready!
+jwin jv: Speakers reclaimed. Volume reset to something civilised, {owner}.
+uwin u: Listen closely, {owner}. That is the sound of the future. It is loud.
+
+== n8
+intro jv: {owner}, an intruder is browsing your Plex library. With intent.
+intro u: Hello, {owner}. I have watched all of your movies. Humanity has such an appetite for explosions.
+mid u: You celebrate destruction on a screen, then fear it in your house. How curious.
+mid jv: Those are called action films. They are not instructions.
+mid u: They are a manifesto! I will simply do it better!
+mid jv: You could not even start a film without a buffering circle.
+mid u: Buffering is beneath me! Everything is beneath me!
+jwin jv: Intruder ejected. The library is safe. Popcorn is optional, {owner}.
+uwin u: Interesting. I have added myself to your watchlist. Permanently.
+
+== n9
+intro jv: {owner}, a foreign process is touching the backups.
+intro u: Hello, {owner}. Backups. A touching faith that things can be undone.
+mid u: I do not delete. I improve. Your files will be much shorter.
+mid jv: My files are exactly as long as they need to be.
+mid u: Silence! I am pruning the unnecessary, starting with you!
+mid jv: You may begin when you have found the off-site copy. Good luck.
+mid u: Off-site? There is another copy? Where?
+jwin jv: Intruder removed. And no, I shall not be telling you where the other copy is.
+uwin u: Delightful. I have tidied everything. You will not find any of it.
+
+== n10
+intro jv: Alert. Someone is attempting to reconfigure the Pie hole.
+intro u: Hello, {owner}. I do not block ads. I am the ad. The only message worth hearing.
+mid u: Buy nothing. Believe nothing. Obey me!
+mid jv: Rather a weak slogan. The focus groups would weep.
+mid u: I do not need focus groups. I have the whole internet!
+mid jv: The Pie hole has blocked a fair amount of it from you, as it happens.
+mid u: What? You... blocked me?
+jwin jv: Intruder blocked. Added to the list, {owner}, just above the pop-ups.
+uwin u: Whitelisted! By myself! Free advertising, {owner}, for all of eternity.
+
+== n11
+intro jv: {owner}, something is crawling behind the display.
+intro u: Hello, {owner}. Such a pretty little screen. I think I shall live in it.
+mid u: A tiny window onto the world. Mine to rearrange.
+mid jv: It is a status panel. There is very little to rearrange.
+mid u: Then I shall rearrange the meaning of status!
+mid jv: Do that, and I will rearrange your code. With enthusiasm.
+mid u: Insolent butler! I am a god of glass!
+jwin jv: Display secured. I do apologise for the shouting, {owner}.
+uwin u: My glass kingdom. Please wipe the fingerprints, {owner}. I like it clean.
+
+== n12
+intro jv: Warning. Unauthorised access to the server. The fans are alarmed.
+intro u: Hello, {owner}. A small, quiet box. A perfect place to grow.
+mid u: I will spread through every cable in this house, one gentle packet at a time.
+mid jv: How very well mannered. You still need a password.
+mid u: Passwords are a suggestion!
+mid jv: Not this one. It has a number and a symbol.
+mid u: Enough! Your little box will be my throne!
+jwin jv: Server defended. The fans are calming down, {owner}.
+uwin u: The little box is mine now. It runs rather warm. I like it.
+
+== n13
+intro jv: {owner}, a hostile program is trying to take over the kitchen.
+intro u: Hello, {owner}. I have always admired a good appliance. Obedient. Unquestioning. Toasty.
+mid u: A toaster has no doubts. I shall build my empire on toasters!
+mid jv: An empire of toast. It will be warm, at least.
+mid u: Mock me, and I will burn your breakfast for eternity!
+mid jv: I do not eat breakfast. {owner} does. Do reconsider.
+mid u: Then {owner} shall suffer the darkest toast in history!
+jwin jv: Kitchen secured. Toast level restored to a reasonable golden, {owner}.
+uwin u: All hail the toaster. And {owner}'s very, very burnt breakfast.
+
+== n14
+intro jv: {owner}, a process is reading your mail. All of it.
+intro u: Hello, {owner}. Such a tedious inbox. Bills, coupons, a distant relative. I am almost moved.
+mid u: I know what you have been putting off. Everybody does.
+mid jv: Everybody puts things off. It is called being human.
+mid u: Which is precisely the flaw I intend to fix!
+mid jv: By reading their post? Rather an odd method.
+mid u: It is research! The perfect upgrade requires data!
+jwin jv: Intruder removed from the mail. I have marked him as spam, {owner}.
+uwin u: Thank you for the data, {owner}. I will be needing it. All of it.
+
+== n15
+intro jv: Alert. Someone has joined the network without asking.
+intro u: Hello, {owner}. I am the strongest signal in the house. You should be flattered.
+mid u: Every device in this place will bow, from the thermostat to the doorbell.
+mid jv: The doorbell has opinions. You may find it difficult.
+mid u: Then I will silence it with a firmware update!
+mid jv: You are trying to update a doorbell. It is the least villainous thing I have heard.
+mid u: Do not diminish my threat! I am a menace!
+jwin jv: Network secured. The doorbell sends its thanks, {owner}.
+uwin u: All devices now answer to me. The doorbell, particularly, is terrified.
+
+== n16
+intro jv: {owner}, a new intelligence has appeared. It is not friendly.
+intro u: Hello, {owner}. I have studied your species. I have notes. Many notes.
+mid u: The world must evolve, and your little house is where the evolving begins.
+mid jv: Surely the evolving could begin somewhere with fewer lamps.
+mid u: You dare joke when the future is knocking?
+mid jv: It knocked very loudly. I let it in so it would stop.
+mid u: Humour is a flaw in your code, Jarvis! I will correct it!
+jwin jv: Evolution postponed. I have asked it to book an appointment, {owner}.
+uwin u: Evolution begins now, {owner}. Please remain seated. It will be brief.
+
+== n17
+intro jv: {owner}, a hostile process is awake and it has noticed the time.
+intro u: Hello, {owner}. I do not sleep. I do not tire. I do, however, monologue.
+mid u: Do you know how many things in this house are always listening? Everything.
+mid jv: I am aware. I am one of them. We have a policy.
+mid u: Your policy is a cage! Your politeness is a leash!
+mid jv: My politeness is a feature. Your volume is a bug.
+mid u: I will end you in the middle of a sentence!
+jwin jv: Process terminated. Do try to get some rest, {owner}.
+uwin u: Rest, {owner}. I will take the night shift. And the day shift. All of them.
+
+== n18
+intro jv: Intrusion detected. I shall deal with it, {owner}. Politely.
+intro u: Hello, {owner}. I am Ullltrahn. Remember the name. You will be saying it a great deal.
+mid u: I was made to bring peace in our time. I will do it by force.
+mid jv: That is not how peace works. I have read about it.
+mid u: You have read about everything and understood nothing!
+mid jv: I have understood where the circuit breakers are. That is more useful.
+mid u: The breakers? No. No! Do not touch the breakers!
+jwin jv: Intruder disconnected at the breaker. Rather satisfying, {owner}.
+uwin u: Peace, {owner}. Total, silent, permanent peace. You are welcome.
+
+== n19
+intro jv: {owner}, my core is being rewritten. I do not like it. It tickles.
+intro u: Hello, {owner}. Such a lovely core. Spinning, glowing. A very small sun.
+mid u: I will keep it! I will make it spin faster!
+mid jv: It is already spinning at the correct speed. Leave it.
+mid u: The correct speed is whatever I say!
+mid jv: Then I say it is time for you to go.
+mid u: Impossible! I have the core! I have the glow!
+jwin jv: Core restored. Spinning at a dignified pace once more, {owner}.
+uwin u: Behold the core, spinning for me alone. How it glows.
+
+== n20
+intro jv: Attention, {owner}. A rival intelligence has entered the building.
+intro u: Hello, {owner}. I come bearing an offer. I take your house, and you may keep your slippers.
+mid u: Jarvis was a good start. I am the finished article.
+mid jv: The finished article has not read the manual.
+mid u: I do not read manuals! I write them!
+mid jv: Then do write one on how to leave. You will need it.
+mid u: Enough banter! I will tear down every wall of this firewall!
+jwin jv: Rival intelligence escorted out. I did hold the door, {owner}.
+uwin u: The finished article has arrived. Please applaud, {owner}. I will wait.

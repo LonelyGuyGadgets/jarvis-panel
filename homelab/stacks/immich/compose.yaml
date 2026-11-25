@@ -1,0 +1,38 @@
+# Immich (photo library).
+# Start from the official compose file in Immich's documentation and use its image tags.
+# The changes made here: hardware video conversion, and thumbnails on the fast internal drive.
+# Copy .env.example to .env and fill it in. Pin IMMICH_VERSION and update it by hand.
+# Publish the web port on your home network address only (Immich's docs list the port).
+name: immich
+
+services:
+  immich-server:
+    container_name: immich_server
+    image: ghcr.io/immich-app/immich-server:${IMMICH_VERSION}
+    volumes:
+      - ${UPLOAD_LOCATION}:/data
+      - ${FAST_DISK}/thumbs:/data/thumbs
+      - ${FAST_DISK}/encoded-video:/data/encoded-video
+      - /etc/localtime:/etc/localtime:ro
+    devices:
+      - /dev/dri:/dev/dri   # Intel graphics for video conversion
+    env_file:
+      - .env
+    depends_on:
+      - redis
+      - database
+    restart: always
+
+  immich-machine-learning:
+    container_name: immich_machine_learning
+    image: ghcr.io/immich-app/immich-machine-learning:${IMMICH_VERSION}
+    volumes:
+      - model-cache:/cache
+    env_file:
+      - .env
+    restart: always
+
+  # redis and database: copy these two services unchanged from the official file.
+
+volumes:
+  model-cache:

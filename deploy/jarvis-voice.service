@@ -1,0 +1,14 @@
+[Unit]
+Description=Jarvis voice listener (Surface microphone)
+After=pipewire.service sound.target network-online.target
+
+[Service]
+ExecStart=/usr/bin/python3 %h/jarvis/voice-listener.py
+Restart=always
+RestartSec=3
+# Tuning for the room: raise TRIGGER_X if it fires on noise, lower it if it misses you.
+Environment=JARVIS_TRIGGER_X=3.5
+Environment=JARVIS_MIN_RMS=120
+
+[Install]
+WantedBy=default.target

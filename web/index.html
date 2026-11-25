@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Lab Control</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="scan"></div>
+<main class="hud">
+  <header class="top">
+    <span id="who"></span>
+    <span id="title">L.A.B. // <b id="link">CONNECTING</b></span>
+    <div id="climate"></div>
+    <span id="mute" title="Voice on/off" role="button" aria-label="Mute voice"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="spk" d="M3 9v6h4l5 4V5L7 9H3z"/><path class="wav" d="M15 8.5a5 5 0 0 1 0 7M17.5 6a8.5 8.5 0 0 1 0 12"/><path class="cut" d="M15 9l6 6M21 9l-6 6"/></svg></span>
+    <span id="clock"></span>
+  </header>
+
+  <section class="col" id="left">
+    <div class="pnl" id="p-nuc"><h3>NUC <em class="tag"></em></h3><div class="body"></div></div>
+    <div class="pnl" id="p-plex"><h3>Plex <em class="tag"></em></h3><div class="body"></div></div>
+    <div class="pnl" id="p-disks"><h3>Disks <em class="tag"></em></h3><div class="body"></div></div>
+  </section>
+
+  <section class="mid">
+    <div class="irings"><i></i><i></i><i></i></div>
+    <div class="core" id="core">
+      <svg viewBox="0 0 200 200" aria-hidden="true">
+        <circle class="ring r1" cx="100" cy="100" r="96"/>
+        <g id="ticks"></g>
+        <circle class="track" cx="100" cy="100" r="78"/>
+        <circle class="arc" id="arc" cx="100" cy="100" r="78" transform="rotate(-90 100 100)"/>
+        <circle class="ring r3" cx="100" cy="100" r="64"/>
+      </svg>
+      <div class="core-text"><div id="health">--</div><div id="verdict">LINKING</div></div>
+    </div>
+    <div class="np" id="np">
+      <img id="np-art" alt="" style="display:none">
+      <div class="np-text"><div id="np-room"></div><div id="np-title"></div><div id="np-artist"></div></div>
+    </div>
+  </section>
+
+  <section class="col" id="right">
+    <div class="pnl" id="p-pihole"><h3>Pi-hole <em class="tag"></em></h3><div class="body"></div></div>
+    <div class="pnl" id="p-lights"><h3>Lights <em class="tag"></em></h3><div class="body"></div></div>
+    <div class="pnl" id="p-audio"><h3>Audio <em class="tag"></em></h3><div class="body"></div></div>
+  </section>
+
+  <footer class="btns" id="btns"></footer>
+  <div class="toast" id="toast"></div>
+  <div id="idle-clock"><div id="ic-time"></div><div id="ic-date"></div></div>
+</main>
+<script src="/static/logic.js"></script>
+<script src="/static/vendor/three.min.js"></script>
+<script src="/static/holo.js"></script>
+<script src="/static/sound.js"></script>
+<script src="/static/fun.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
